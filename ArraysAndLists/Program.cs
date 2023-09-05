@@ -35,17 +35,16 @@ namespace ArraysAndLists
                 {
                     odds.Add(num);
                 }
-                    
-                Console.WriteLine("Even numbers:");
-                foreach (int even in evens)
-                {
-                    Console.WriteLine(even + " ");
-                }
-                Console.WriteLine("Odd numbers:");
-                foreach (int odd in odds)
-                {
-                    Console.WriteLine(odd + " ");
-                }
+
+            }
+            for (int i = 0; i < evens.Count; i++)
+            {
+                Console.WriteLine($"{evens[i]} is an even number");
+            }
+            for (int i = 0; i <= odds.Count; i++) 
+            {
+                Console.WriteLine($"{odds[i]} is an odd number");
+            }
 
 
 
@@ -59,5 +58,4 @@ namespace ArraysAndLists
             }
         }
     }
-}
 
